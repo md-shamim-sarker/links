@@ -14,25 +14,6 @@ header {
     background-color: antiquewhite;
 }
 
-/* Main Section */
-
-main {
-    display: grid;
-    grid-template-columns: auto auto;
-    
-    width: 80%;
-    margin: auto;
-    height: auto;
-    background-color: rgb(236, 245, 242);
-}
-
-main > a > img {
-    width: 500px;
-    border-radius: 20px;
-    border: 1px solid gray;
-    margin: 10px;
-}
-
 /* Menu Section */
 
 menu {
@@ -50,6 +31,7 @@ menu > a {
     margin: 5px;
     text-decoration: none;
     font-weight: bold;
+    padding: 5px 5px;
 }
 
 menu > a:hover {
@@ -58,6 +40,24 @@ menu > a:hover {
 
 menu > a:visited {
     color: red;
+}
+
+/* Main Section */
+
+main {
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 80%;
+    margin: auto;
+    background-color: rgb(236, 245, 242);
+    gap: 5px;
+}
+
+main > a > img {
+    border-radius: 20px;
+    border: 1px solid gray;
+    margin: 10px 0 10px 0;
+    width: 100%;
 }
 
 /* Footer Section */
@@ -85,4 +85,15 @@ footer > div > a > img {
 
 footer > div > a > img:hover {
     opacity: 100%;
+}
+
+@media screen and (max-width: 640px) {
+    main {
+        grid-template-columns: auto;
+        width: 98%;
+    }
+
+    menu {
+        width: 98%;
+    }
 }
