@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: rgb(87, 82, 75);
+    background-color: rgb(243, 238, 232);
 }
 
 header {
@@ -19,14 +19,31 @@ header {
 main {
     width: 70%;
     margin: auto;
-    height: 300px;
+    height: 700px;
     background-color: aquamarine;
+}
+
+/* Menu Section */
+
+menu {
+    display: flex;
+    column-gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+menu > a {
+    color: black;
+    margin: 5px;
+    text-decoration: none;
 }
 
 /* Footer Section */
 
 footer {
     display: flex;
+    flex-direction: column;
+    gap: 12px;
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -36,4 +53,14 @@ footer {
 
 footer > p {
     color: white;
+}
+
+footer > div > a > img {
+    width: 20px;
+    opacity: 60%;
+    margin-left: 10px;
+}
+
+footer > div > a > img:hover {
+    opacity: 100%;
 }
